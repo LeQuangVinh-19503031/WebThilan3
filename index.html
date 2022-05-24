@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="./Jquery/jquery-3.6.0.min.js"></script>
+    <script src="./Jquery/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./setup.css">
+</head>
+<body class="body container">
+    <header class="w-100 d-flex justify-content-around align-items-center">
+        <h2 class="w-50 text-center ">TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h2>
+        <img src="./img/anh1.webp" class="w-50 img-thumbnail img-tron" alt="">
+    </header>
+   <ul id="menu" class="p-3 m-0 menu w-100 list-inline d-flex justify-content-end">
+        <li class="col-sm-2"><a href="#" class="btn btn-info">FANPAGE</a></li>
+        <li class="col-sm-2"><a href="#" class="btn btn-info" data-target="#myModal" data-toggle="modal">REGISTER</a></li>
+        <li class="col-sm-2"><a href="#" class="btn btn-info">LOGIN</a></li>
+        <li class="col-sm-2" id="main-menu"><a href="#" id="" class="btn btn-info">NEWS</a>
+            <ul id="sub-menu" class=" list-inline">
+                <li>1AAAAA</li>
+                <li>2AAAAA</li>
+                <li>3AAAAAAAA</li>
+            </ul>
+        </li>
+   </ul>
+   <div class="dropdown-menu">
+       <div class="nav-item">a</div>
+   </div>
+    <section class="w-100">
+        <table class="table table-striped table-danger">
+            <thead class="w-100">
+                <tr class="w-100">
+                    <th class="col-sm-2">STT</th>
+                    <th class="col-sm-2">ID</th>
+                    <th class="col-sm-2">FULL NAME</th>
+                    <th class="col-sm-2">ADDRESS</th>
+                    <th class="col-sm-2">PHONE NUMBER</th>
+                </tr>
+            </thead>
+            <tbody id="addUser">
+                
+            </tbody>
+        </table>
+        <div class="modal fade" data-="" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <a href="#" class="text-success">ĐĂNG KÍ THÔNG TIN</a>
+                        </div>
+                        <span class="close btn" data-dismiss="modal">x</span>
+                    </div>
+                    <div class="modal-section">
+                        <form class="form" action="" id="form-1">
+                            <div class="form-group alert">
+                                <label for="txtID">Id:</label>
+                                <input type="text" class="w-100" name="" id="txtID" onblur="return ktraId()">
+                                <span id="mes-ID" class="text-danger"></span>
+                            </div>
+                            <div class="form-group alert">
+                                <label for="txtName">Name:</label>
+                                <input type="text" name="" id="txtName" class="w-100" onblur="return ktraName()">
+                                <span id="mes-Name" class="text-danger"> </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="reset" data-dismiss="modal" class="btn btn-outline-dark">Close</button>
+                        <button type="submit" id="saveValue" class="btn btn-outline-success" onclick="ktraAdd()">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-100 btn btn-outline-dark bg-info">
+        <span class="w-100 text-center">
+            19503031 - LÊ QUANG VINH - KHMT15B
+        </span>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+#menu{
+    position: relative;
+}
+#menu li a{
+    width: 100px;
+}
+#main-menu a::after{
+    position: absolute;
+    content: ">";
+    top: 18%;
+    right: 40%;
+    transform: rotate(90deg);
+}
+#main-menu{
+    position: relative;
+    /* top: 0;
+    left: 0;
+    transform: translate(0,33%); */
+}
+#sub-menu li{
+    width: 150px;
+    height: 50px;
+    background-color: gray;
+    padding: 10px 20px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+#sub-menu{
+   position: absolute;
+   display: none;
+}
+#main-menu:hover #sub-menu{
+    
+    display: block;
+    z-index: 99999;
+}
+
+header:active{
+    background-color: rgba(37, 64, 171, 0.61) !important;
+}
